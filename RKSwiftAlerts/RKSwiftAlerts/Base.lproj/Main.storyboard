@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RKSwiftAlerts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw8-Up-tcG">
+                                <rect key="frame" x="263" y="66" width="75" height="30"/>
+                                <state key="normal" title="Show Alert"/>
+                                <connections>
+                                    <action selector="onTapShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ee-3Q-1WA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4y-Zp-ni3">
+                                <rect key="frame" x="221" y="117" width="158" height="30"/>
+                                <state key="normal" title="Show Alert With Action"/>
+                                <connections>
+                                    <action selector="onTapShowAlertWithAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKi-Y9-g2I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeh-Dt-uwx">
+                                <rect key="frame" x="187" y="173" width="226" height="30"/>
+                                <state key="normal" title="Show alert Action With Text Field"/>
+                                <connections>
+                                    <action selector="onTapAlertActionWithTextField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vts-d9-RNj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aw8-Up-tcG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1XD-wc-Rar"/>
+                            <constraint firstItem="oeh-Dt-uwx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sjx-Lo-Ed0"/>
+                            <constraint firstItem="A4y-Zp-ni3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hYc-Qi-lgU"/>
+                            <constraint firstItem="oeh-Dt-uwx" firstAttribute="top" secondItem="A4y-Zp-ni3" secondAttribute="bottom" constant="26" id="kwU-sg-8ML"/>
+                            <constraint firstItem="A4y-Zp-ni3" firstAttribute="top" secondItem="aw8-Up-tcG" secondAttribute="bottom" constant="21" id="pda-zb-QZ6"/>
+                            <constraint firstItem="aw8-Up-tcG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="wAm-YJ-oyG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
